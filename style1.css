@@ -105,8 +105,6 @@ section .title::after {
 .navbar .menu li a {
     display: block;
     color: crimson;
-    border: 2px solid;
-    border-radius: 4px;
     padding: 2px;
     font-size: 18px;
     font-weight: 500;
@@ -116,6 +114,22 @@ section .title::after {
 
 .navbar .menu li a:hover {
     color: rgb(165, 161, 161);
+}
+
+.navbar.white-section .logo a {
+    color: #111;
+}
+
+.navbar.white-section .logo a span {
+    color: crimson;
+}
+
+.navbar.white-section .menu li a {
+    color: crimson;
+}
+
+.navbar.white-section .menu li a:hover {
+    color: #111;
 }
 
 /* menu btn styling */
@@ -138,14 +152,27 @@ section .title::after {
 
 /* home section styling */
 .home {
+    position: relative;
     display: flex;
-    background: url("images/WhatsApp\ Image\ 2026-03-29\ at\ 11.04.38\ PM.jpeg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: url("images/home_bg.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    filter: blur(3px);
+    z-index: -1;
 }
 
 .home .max-width {
@@ -437,7 +464,9 @@ section .title::after {
 }
 
 .contact .contact-content .column {
-    width: calc(50% - 30px);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact .contact-content .text {
