@@ -38,6 +38,11 @@ footer {
     justify-content: space-between;
 }
 
+.services .serv-content {
+    align-items: stretch;
+    gap: 20px;
+}
+
 section .title {
     position: relative;
     text-align: center;
@@ -345,13 +350,14 @@ section .title::after {
 }
 
 .services .serv-content .card {
-    width: calc(33% - 20px);
+    width: calc(33.333% - 14px);
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 40px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 0;
 }
 
 .services .serv-content .card:hover {
@@ -796,7 +802,7 @@ footer span a:hover {
 
     .services .serv-content .card {
         width: calc(50% - 10px);
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .skills .skills-content .column,
