@@ -696,6 +696,37 @@ section .title::after {
     font-weight: 500;
 }
 
+/* WhatsApp button */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 22px;
+    height: 45px;
+    background: #25D366;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 2px solid #25D366;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    background: none;
+    color: #25D366;
+}
+
+.whatsapp-btn i {
+    font-size: 20px;
+}
+
+/* WhatsApp icon green in contact info */
+.contact .contact-content .row .fa-whatsapp {
+    color: #25D366;
+}
+
 /* footer section styling */
 footer {
     background: #111;
