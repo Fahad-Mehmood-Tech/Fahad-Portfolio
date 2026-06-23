@@ -299,8 +299,8 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    typingEl.classList.add('animate');  // start animation
-                    observer.unobserve(aboutSection);   // run only once
+                    typingEl.classList.add('animate');
+                    observer.unobserve(aboutSection);
                 }
             });
         }, { threshold: 0.3 });

@@ -48,17 +48,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ============================================================
-// EmailJS Setup
-// 1. Go to https://www.emailjs.com and create a free account
-// 2. Add Gmail service → copy Service ID
-// 3. Create an email template → copy Template ID
-// 4. Go to Account > API Keys → copy Public Key
-// Replace the 3 values below with your actual IDs
-// ============================================================
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+
+
+const EMAILJS_PUBLIC_KEY = "bEutguencKBSeYkOY";
+const EMAILJS_SERVICE_ID = "service_hmqf53h";
+const EMAILJS_TEMPLATE_ID = "template_q4rzafh";
 
 emailjs.init(EMAILJS_PUBLIC_KEY);
 
